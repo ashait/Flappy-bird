@@ -1,0 +1,90 @@
+html, body {
+  margin: 0; padding: 0;
+  width: 100%; height: 100%;
+  display: flex; justify-content: center; align-items: center;
+  /* background-image: url(flappy.jpg); */
+}
+#game-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: rgb(150, 214, 31); 
+  overflow: hidden;
+  background-image: url(Untitled\ design.png);
+  background-size: cover;      /* Image ko full container tak fit kar dega */
+  background-repeat: no-repeat; /* Image bar bar repeat nahi hogi */
+  background-position: center; 
+  background-size: 100% 100%;
+
+}
+#bird {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-image: url('pic.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  mix-blend-mode: multiply;
+  top: 50%;
+  left: 20%;
+}
+.pipe {
+  position: absolute;
+  width: 60px;
+  height: 200px; /* match your pipe image */
+  background-image: url('pipi.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: rgb(150, 214, 31);  /* fallback */
+}
+#score {
+  position: absolute;
+  top: 10px; left: 10px;
+  font: bold 24px sans-serif;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+}
+#game-over {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+  z-index: 11;
+  display: none;
+}
+#restartBtn {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color:rgb(150, 214, 31); 
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 20;
+} 
+
+ .footer {
+  position: absolute; /* ya fixed, dono chalega depending on what you want */
+  bottom: 10px;
+  left: 10px;
+  padding: 15px 12px;
+  font-size: 14px;
+  color: white;
+  background-color: rgb(150, 214, 31); 
+  border-radius: 6px;
+  z-index: 100;
+  width: 20%;
+  height: 4%;
+  text-align: center;
+}
+
+
